@@ -15,9 +15,8 @@ O back-end que integra o sistema **Ajuda Mais** utiliza a linguagem Python com o
 
 ### Diagrama do Ajuda Mais
 
-![Diagrama dos componentes do Ajuda Mais]([URL da imagem](https://github.com/rlcoelho/ajuda-mais-front-end/blob/master/FluxogramaAjudarMais2.jpg))
+---![FluxogramaAjudarMais2](https://github.com/user-attachments/assets/34222858-d2ec-4eea-9039-6f858c609528)
 
----
 ## Como instalar utilizando o Docker
 
 Este repositório possui um arquivo dockerfile correspondente ao frontend. Antes de criar o container Docker é necessário obter os demais repositórios, pois em cada um haverá um arquivo dockerfile necessário para o docker-compose, que irá orquestrar todos os containeres.
