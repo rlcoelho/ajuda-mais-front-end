@@ -1,0 +1,13 @@
+/* Resultados listas */
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #000 !important;
+}
+
+.icon {
+    margin-right: 12px;
+    cursor: pointer;
+}
