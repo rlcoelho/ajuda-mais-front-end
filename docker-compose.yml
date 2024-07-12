@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  backend:
+    build:
+      context: ./mvp_back
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - my_network
+  frontend:
+    build:
+      context: ./mvp_front
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - my_network
+
+networks:
+  my_network:
