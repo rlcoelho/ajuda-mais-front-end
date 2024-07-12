@@ -15,7 +15,7 @@ O back-end que integra o sistema **Ajuda Mais** utiliza a linguagem Python com o
 
 ### Diagrama do Ajuda Mais
 
-<img src="[URL_da_Imagem](https://github.com/rlcoelho/ajuda-mais-front-end/blob/master/FluxogramaAjudarMais2.jpg)" alt="Diagrama dos componentes do Ajuda Mais">
+![Diagrama dos componentes do Ajuda Mais]([URL da imagem](https://github.com/rlcoelho/ajuda-mais-front-end/blob/master/FluxogramaAjudarMais2.jpg))
 
 ---
 ## Como instalar utilizando o Docker
