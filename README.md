@@ -15,7 +15,7 @@ O back-end que integra o sistema **Ajuda Mais** utiliza a linguagem Python com o
 
 ### Diagrama do Ajuda Mais
 
----![FluxogramaAjudarMais2](https://github.com/user-attachments/assets/34222858-d2ec-4eea-9039-6f858c609528)
+![FluxogramaAjudarMais2](https://github.com/user-attachments/assets/34222858-d2ec-4eea-9039-6f858c609528)
 
 ## Como instalar utilizando o Docker
 
@@ -28,7 +28,7 @@ Com os dois repositórios em sua máquina, crie uma estrutura de pasta, similar 
 - /MVP2
   - /mvp_back (onde você irá clonar o https://github.com/rlcoelho/ajuda-mais-back-end.git ) 
   - /mvp_front (onde você irá clonar o https://github.com/rlcoelho/ajuda-mais-front-end.git ) 
-  - docker-compose.yml ( disponível em: [https://github.com/rlcoelho/ajuda-mais-front-end.git](https://github.com/rlcoelho/ajuda-mais-front-end/blob/master/docker-compose.yml) )
+  - docker-compose.yml ( disponível em: https://github.com/rlcoelho/ajuda-mais-front-end/blob/master/docker-compose.yml )
 
 Se desejar outra estrutura de pastas, você pode editar o arquivo docker-compose.yml para os locais que desejar, apenas localize os termos "build" e substitua os contextos pelas suas pastas.
 
