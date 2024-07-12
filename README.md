@@ -1,39 +1,29 @@
-# Front-end do sistema Minhas Tarefas
+# Front-end do sistema Ajuda Mais
 
-A proposta do **Minhas Tarefas** é ser um sistema simples para o registro de compromissos. A intenção é oferecer ao usuário uma experiência de uso fácil, como se ele estivesse diante de um bloco de papel e uma caneta.
+O sistema **Ajuda Mais** tem o objetivo de gerenciar campanhas de ajuda humanitárias, cadastrando os dados dos abrigos - os locais onde as pessoas são acolhidas - e também os suprimentos que são recebidos nestes abrigos como doação. O problema que o **Ajuda Mais** procura resolver é saber quais abrigos precisam de determinado suprimento básico, por exemplo, água mineral, e quais abrigos, que, porventura tenham recedido uma grande quantidade de doação, neste exemplo, de água mineral, possam repassar esta doação excedente para o abrigo que necessita naquela semana.
 
-Diferente de outras ferramentas mais robustas e com diversos controles e configurações que muitas vezes não são utilizados ou causam confusão em seu uso, o **Minhas Tarefas** organiza as tarefas previstas por categorias e o usuário tem total controle sobre a criação das tarefas e das categorias.
+Seguindo o exemplo, baseado no total de pessoas que estão no abrigo A nesta semana e sabendo via cadastro que cada pessoa consome 21 garrafas de água por semana, o **Ajuda Mais** calcula a quantidade de água que precisa ter em estoque, para saber se tem água suficiente ou não na semana. Supondo que precise de água e outro abrigo B tenha água excedente, esse repasse pode ser viabilizado.
 
-Front-end desenvolvido no formato de Single Page Application (SPA) utilizando HTML, CSS e JavaScript. Possui design responsivo e alguns recursos de acessibilidade, como tags semânticas e textos alternativos nos ícones de interação.
+Front-end desenvolvido no formato de Single Page Application (SPA) utilizando HTML, CSS, JavaScript e Bootstrap v5.3. 
 
-O back-end que integra o sistema **Minhas Tarefas** utiliza a linguagem Python com o microframework web Flask, framework ORM SQLAlchemy e banco de dados embutido SQLite3, além de outras bibliotecas do Python.
+O back-end que integra o sistema **Ajuda Mais** utiliza a linguagem Python com o microframework web Flask, framework ORM SQLAlchemy e banco de dados embutido SQLite3, além de outras bibliotecas do Python.
+
+---
+## Arquitetura e requisitos
+
+É importante ter o Docker instalado, já que a aplicação foi concebida em uma arquitetura de microsserviços, com um componente principal (este frontend) e outra API, com possibilidade de expansão para a inserção de novas funcionalidades e consumo de APIs externas. Nesta versão, é utilizada a API VIACEP, acessível pelo link https://viacep.com.br/ws/01001000/json/ onde o 01001000 é o CEP consultado e trabalhado com as funções Javascript 'pesquisaCep()' e 'meuCallback()' além de outras funções para tratamento dos dados que estão presentes no arquivo 'js/scripts.js'.
+
+
 
 
 ---
-## Como executar
+## Como executar utilizando o Docker
 
-Basta fazer o download do projeto e abrir o arquivo index.html no seu browser. Devem estar na mesma pasta os arquivos index.html, w3.css e scripts.js.
+Este repositório possui um arquivo dockerfile correspondente ao frontend. Para exe
 
 
 ---
 ## Melhorias previstas
 
-1) Criação de filtro para exibir na tela "Todas as tarefas":
-    a) todas as tarefas.
-    b) somente as tarefas que não estão concluídas.
-    c) somente as tarefas que estão concluídas.
-    d) tarefas por data prevista.
-    e) tarefas da semana atual.
 
-2) Criação de nova tela inicial com as tarefas da semana atual e que permita paginação entre a semana anterior e a próxima semana.
-
-3) Paginação das listas de tarefas e de categorias com o usuário escolhendo a quantidade de registros que deseja exibir.
-
-4) Opção para alteração de todos os dados de uma tarefa cadastrada.
-
-5) Permitir a vinculação entre tarefas criando uma opção de relacionar uma tarefa a outra.
-
-6) Relatórios diversos.
-
-7) Serviços de notificações com alertas próximos a data prevista.
 
